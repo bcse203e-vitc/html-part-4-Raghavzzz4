@@ -1,0 +1,47 @@
+<html>
+
+<head>
+ <title>Feedback Form</title>
+</head>
+
+<body>
+ <h1>Feedback form</h1>
+ <form action="/login" method="post">
+
+ <label for="Fields">Field name:</label><br>
+ <input type="text" id="Fields" name="Fields" required><br><br>
+ 
+ <label for="Email">Email:</label><br>
+ <input type="Email" id="Email" name="Email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"><br><br>
+ 
+ <label for="Rate">Rate the website:</label><br>
+ <p>1 star
+ <input type="radio" id="Gender" name="Gender" required>
+2 star
+<input type="radio" id="Gender" name="Gender" required>
+3 star
+<input type="radio" id="Gender" name="Gender" required>
+4 star
+<input type="radio" id="Gender" name="Gender" required>
+5 star
+<input type="radio" id="Gender" name="Gender" required><br><br>
+</p>
+
+<label for="Feedback">Feedback:</label><br>
+<textarea name="Feedback" rows=10 columns=10></textarea>
+<br><br>
+
+<label for="Rate">Would you like to reccomend something?</label><br>
+ <p>yes
+ <input type="radio" id="Gender" name="Gender" required>
+ no
+ <input type="radio" id="Gender" name="Gender" required>
+ <br><br>
+ <button type="submit">Register</button><br>
+ <br>
+ <button type="reset">Reset</button><br>
+ <br>
+ 
+ 
+</body>
+</html>
