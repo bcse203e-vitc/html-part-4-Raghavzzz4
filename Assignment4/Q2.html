@@ -1,0 +1,58 @@
+<html>
+
+<head>
+ <title>Registration Form</title>
+</head>
+
+<body>
+ <h1>Registration form for online event</h1>
+ <form action="/login" method="post">
+
+ <label for="Full name">Full name:</label><br>
+ <input type="text" id="Full name" name="Full name" required><br><br>
+ 
+ <label for="Email">Email:</label><br>
+ <input type="Email" id="Email" name="Email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"><br><br>
+
+ <label for="Phone number">Phone number:</label><br>
+ <input type="tel" id="Phonenumber" name="Phonenumber" pattern="^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$"><br><br>
+ 
+ <label for="Gender">Gender:</label><br>
+ <p>male
+ <input type="radio" id="Gender" name="Gender" required>
+female
+<input type="radio" id="Gender" name="Gender" required><br><br>
+</p>
+
+<label for="Agegroups">Age group:</label><br>
+<input list="Agegroups" name="Agegroups">
+<datalist id="Agegroups">
+    <option value="Genz">
+    <option value="Mileniums">
+    <option value="OGs">
+</datalist>
+<br><br>
+
+<label for="topic of interest">Topic of interests:</label><br>
+<p>
+    chess
+<input type="checkbox" id="toi" name="toi" required>
+studying
+<input type="checkbox" id="toi" name="toi" required>
+anime
+<input type="checkbox" id="toi" name="toi" required>
+eating
+<input type="checkbox" id="toi" name="toi" required>
+roasting
+<input type="checkbox" id="toi" name="toi" required>
+</p><br>
+
+<label for="Comments">Additional Comments:</label><br>
+<textarea name="Comments" rows=10 columns=10></textarea>
+<br><br>
+
+ <button type="submit">Register</button><br>
+ <br>
+ 
+</body>
+</html>
